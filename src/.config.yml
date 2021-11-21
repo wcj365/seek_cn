@@ -4,7 +4,7 @@ email: wcj365@gmail.com
 logo: _static/images/love-logo2.png
 copyright: "2020" 
 repository:
-  url                       : https://github.com/wcj365/share
+  url                       : https://github.com/wcj365/peeps
   path_to_book              : docs
 
 latex:
@@ -14,6 +14,9 @@ latex:
 
 execute:
   execute_notebooks         : force  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+
+html_theme_options:
+  search_bar_text: " "
 
 html:
   favicon                   : "_static/images/favicon2.png"  # A path to a favicon image
