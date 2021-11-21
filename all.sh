@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
+# Step 1. Build the web site version of the book
 . jupyterbook.sh
 
-python pandoc.py
-
+# Step 2. Build the PDF version of the book
 . pandoc.sh
