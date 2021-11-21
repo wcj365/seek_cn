@@ -10,7 +10,7 @@ sudo apt-get install fonts-arphic-ukai
 
 # Step 3
 # Install latex-cjk-all  to support Chinese/Jaopanese/Korean language for LaTex 
-sudo apt install latex-cjk-all`
+sudo apt install latex-cjk-all
 
 # Step 4
 # install LaTex engine (texlive) and LaTex to PDF transformation library (XeLaTex) required for Pandoc
