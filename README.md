@@ -1,6 +1,8 @@
-# share
+# PEEPS
 
-# My Notes
+PEEPS stands for Personal Easy Electronic Publishing System.
+
+## References
 
 https://scastiel.dev/posts/2021-01-21-how-i-use-pandoc-to-create-my-programming-ebooks/
 
