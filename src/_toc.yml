@@ -6,9 +6,9 @@ parts:
     chapters:
     - file: 01_intro/README.md
       sections:
-        - file: 01_intro/o1.md
-        - file: 01_intro/o2.md
-    - file: 01_github/README.md
+        - file: 01_intro/01.md
+        - file: 01_intro/02.md
+    - file: 02_github/README.md
       sections:
-        - file: 01_github/o1.md
-        - file: 01_guthub/o2.md
+        - file: 02_github/01.md
+        - file: 02_github/02.md
