@@ -5,7 +5,7 @@ from glob import glob
 TARGET_FOLDER = "_pandoc"
 
 if os.path.exists(TARGET_FOLDER):
-    os.remove(TARGET_FOLDER)
+    shutil.rmtree(TARGET_FOLDER)
 
 os.mkdir(TARGET_FOLDER)
 

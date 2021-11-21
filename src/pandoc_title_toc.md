@@ -5,9 +5,7 @@ CJKmainfont: "AR PL UKai TW"
 mainfont: "AR PL UKai TW" 
 geometry: margin=2cm
 number-sections: true 
-toc: true
-include-before: 
-  $\newpage{}$
+toc: false
 documentclass: extarticle
 fontsize: 14pt
 rights: © 2021 Dr Chaojie Wang 王超杰
@@ -17,7 +15,7 @@ lang: en-US
 
 
 \begin{center}
-2021
+© 2021 Dr Chaojie Wang 王超杰
 \end{center}
 
 

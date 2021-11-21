@@ -16,7 +16,7 @@ jupyter-book build --path-output . src
 mkdir docs
 cp -r _build/html/* ./docs/
 cp .nojekyll docs/
-rm -r _build/
+# rm -r _build/
 
 # Note: The zip file has exceeded 50MB, the limit of GitHub.
 # zip up website contents (docs folder name is preserved) 
@@ -35,5 +35,5 @@ rm -r _build/
 # Push the changes to GitHub
 
 git add .
-git commit -m "Built the static website and the PDF verion of the book."
+git commit -m "Built the static website of the book."
 git push
