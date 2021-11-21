@@ -40,4 +40,4 @@ sphinx:
     language: zh_CN
     html_search_language: zh_CN    # make sure to pip install jieba3k
     html_theme_options:
-      search_bar_text: "xxx"
+      search_bar_text: "搜索"
