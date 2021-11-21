@@ -1,6 +1,6 @@
 # PEEPS
 
-PEEPS stands for Personal Easy Electronic Publishing System.
+PEEPS stands for Personal Easy Electronic Publishing System. 个人简易电子出版系统。
 
 ## References
 
