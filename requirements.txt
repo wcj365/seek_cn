@@ -1,0 +1,4 @@
+pip --upgrade
+wheel
+jieba3k
+jupyter-book
