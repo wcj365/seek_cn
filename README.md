@@ -1,6 +1,11 @@
-# PEEPS
+# 实用简易电子出版系统 
 
-PEEPS stands for Personal Easy Electronic Publishing System. 个人简易电子出版系统。
+Practical Easy Electronic Publishing System, 简称PEEPS。
+
+本系统是Jupyter Book及Pandoc的无缝整合。
+
+- 利用Jupyter Book生成可便于在线阅读和搜索的网站。
+- 利用Pandoc生成便于线下阅读和打印的PDF版本。
 
 ## References
 
@@ -14,6 +19,20 @@ https://jdhao.github.io/2017/12/10/pandoc-markdown-with-chinese/
 
 https://www.overleaf.com/learn/latex/XeLaTeX
 
+## 使用说明
+
+1. 初始化 
+  - `$ setup.sh`
+2. 生成网站 
+  - `$ . jupyterbook.sh`
+3. 生成PDF 
+  - `$ . pandoc.sh`
+4. 同时生成网站和PDF 
+  - `$ . all.sh`
+
+具体详见:
+
+- https://wcj365.github/peeps
 
 ~~~
 # Part heading
@@ -24,21 +43,3 @@ https://www.overleaf.com/learn/latex/XeLaTeX
 
 #### Subsection heading
 ~~~
-
-`$ sudo apt install texlive-xetex`
-
-texlive is LaTex engine
-
-xetex is a Latex to PDF transformation enginer which supports UTF-8 unicode for Chinese characters)
-
-sudo apt update
-sudo apt-get update
-
-`$ sudo apt-get install pandoc`
-
-`$ sudo apt install latex-cjk-all` to support Chinese Latex generation for PDF   
-
-
-`$ sudo apt install fonts-arphic-ukai` to install "AR PL UKai TW" font
-
-`$ fc-list` to find all fonts on the system
