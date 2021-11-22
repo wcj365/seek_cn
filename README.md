@@ -30,9 +30,7 @@ https://www.overleaf.com/learn/latex/XeLaTeX
 4. 同时生成网站和PDF 
   - `$ . all.sh`
 
-具体详见:
-
-- https://wcj365.github/peeps
+具体详见:  https://wcj365.github.io/peeps
 
 ~~~
 # Part heading
