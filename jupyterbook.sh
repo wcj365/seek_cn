@@ -17,7 +17,7 @@ fi
 
 # Step 2 - Generate table of contents
 
-jupyter-book toc from-project src -f jb-book -s "_*.*" src/_toc.yml
+jupyter-book toc from-project src -f jb-book -s "_*.*" > src/_toc.yml
 
 
 # Step 3 - Build the static website for the book
