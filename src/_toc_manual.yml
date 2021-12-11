@@ -1,0 +1,14 @@
+format: jb-book
+root: index.md
+
+parts:
+  - caption:
+    chapters:
+    - file: 01_intro/README.md
+      sections:
+        - file: 01_intro/01.md
+        - file: 01_intro/02.md
+    - file: 02_github/README.md
+      sections:
+        - file: 02_github/01.md
+        - file: 02_github/02.md
