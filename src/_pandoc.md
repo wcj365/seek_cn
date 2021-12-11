@@ -13,15 +13,14 @@ lang: en-US
 #lang: zh-CN
 ---
 
+\vspace{5cm}
 \begin{center}
 
-生命有限，知识无涯。  
+路漫漫其修远兮，吾将上下而求索。
 
-随时分享，永久保存。
+\vspace{8cm}
 
-\vspace{13cm}
-
-www.wcj365.xyz
+https://wcj365.github.io/seek
 
 © 2022 Chaojie Wang
 

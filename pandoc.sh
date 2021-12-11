@@ -6,8 +6,6 @@ python pandoc.py
 
 # Step 2. Generate PDF version of the book
 
-cd ../
-
 pandoc --pdf-engine=xelatex `find _pandoc -name '*.md' | sort` -o docs/offline/wcj365_seek.pdf
 pandoc --pdf-engine=xelatex `find _pandoc -name '*.md' | sort` -o docs/offline/wcj365_seek.epub
 

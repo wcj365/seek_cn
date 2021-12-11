@@ -2,16 +2,16 @@ import os
 import shutil
 from glob import glob
 
-TARGET_FOLDER = "../_pandoc"
+TARGET_FOLDER = "_pandoc"
 
 if os.path.exists(TARGET_FOLDER):
     shutil.rmtree(TARGET_FOLDER)
 
 os.mkdir(TARGET_FOLDER)
 
-shutil.copyfile("pandoc_title_toc.md", TARGET_FOLDER + "/00_title_toc.md")
+shutil.copyfile("src/_pandoc.md", TARGET_FOLDER + "/00_title_toc.md")
 
-source_folders = glob("../src/*/")
+source_folders = glob("src/*/")
 
 for folder in source_folders:
     files = glob(folder + "*.md")

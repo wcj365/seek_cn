@@ -1,1 +1,0 @@
-jupyter-book toc from-project src -f jb-book > src/_toc.yml
