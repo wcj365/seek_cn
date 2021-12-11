@@ -1,6 +1,6 @@
-# 实用简易电子出版系统 
+# 求索 - 简易电子知识库 
 
-Practical Easy Electronic Publishing System, 简称PEEPS。
+Simple & Easy Electronic Knowledge Base, 简称SEEK。
 
 本系统是Jupyter Book及Pandoc的无缝整合。
 
