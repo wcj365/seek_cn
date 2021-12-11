@@ -26,7 +26,15 @@ jupyter-book toc from-project src -f jb-book -s "_*.*" > src/_toc.yml
 jupyter-book build --path-output . src > jupyter_book.log
 
 
-# Step 4 - Push the changes to GitHub
+# Step 4 - Copy the genreated website to docs folder 
+
+mkdir docs
+mkdir docs/offline            # to store pdf and epub version of the book
+cp -r _build/html/* ./docs/   # This is the contents of the generated website
+cp .nojekyll ./docs/          # required for GitHub pages to render without using jekyll
+
+
+# Step 5 - Push the changes to GitHub
 
 git add .
 git commit -m "Built the static website of the book."
