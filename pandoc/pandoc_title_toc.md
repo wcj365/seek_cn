@@ -16,6 +16,7 @@ lang: en-US
 \begin{center}
 
 生命有限，知识无涯。  
+
 随时分享，永久保存。
 
 \vspace{13cm}
