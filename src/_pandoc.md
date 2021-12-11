@@ -20,8 +20,7 @@ lang: en-US
 
 \vspace{8cm}
 
-wcj365.github.io/seek
-
+https://wcj365.github.io/seek
 © 2022 Chaojie Wang
 
 \end{center}
