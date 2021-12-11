@@ -1,10 +1,10 @@
-title: 简易电子出版系统
+title: 求索电子出版系统
 author: Dr. Chaojie Wang 王超杰博士 
 email: wcj365@gmail.com
 logo: _static/images/love-logo2.png
 copyright: "2020" 
 repository:
-  url                       : https://github.com/wcj365/peeps
+  url                       : https://github.com/wcj365/seek
   path_to_book              : docs
 
 latex:
