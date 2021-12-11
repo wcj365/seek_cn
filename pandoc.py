@@ -12,13 +12,16 @@ os.mkdir(TARGET_FOLDER)
 shutil.copyfile("src/_pandoc.md", TARGET_FOLDER + "/00_title_toc.md")
 
 source_folders = glob("src/*/")
+print(source_folders)
 
 for folder in source_folders:
     files = glob(folder + "*.md")
     files.sort()
+    print(files)
     if not folder + "00.md" in files:
         continue
-    chapter_file = TARGET_FOLDER + "/"+ folder.split("/")[2] + ".md"
+    chapter_file = TARGET_FOLDER + "/"+ folder.split("/")[1] + ".md"
+    print(chapter_file)
     if os.path.exists(chapter_file):
         os.remove(chapter_file)
     with open(chapter_file, "a") as f_append:

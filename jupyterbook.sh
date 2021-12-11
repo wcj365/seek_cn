@@ -23,7 +23,7 @@ jupyter-book toc from-project src -f jb-book -s "_*.*" > src/_toc.yml
 # Step 3 - Build the static website for the book
 # The interim results are in _build folder
 
-jupyter-book build --path-output . src > jupyter_book.log
+jupyter-book build --path-output . src > jupyterbook.log
 
 
 # Step 4 - Copy the genreated website to docs folder 
