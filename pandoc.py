@@ -15,6 +15,8 @@ source_folders = glob("src/*/")
 print(source_folders)
 
 for folder in source_folders:
+    if "/_static/" in folder:
+        continue
     files = glob(folder + "*.md")
     files.sort()
     if not folder + "00.md" in files:
