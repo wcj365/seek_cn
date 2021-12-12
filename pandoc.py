@@ -12,7 +12,6 @@ os.mkdir(TARGET_FOLDER)
 shutil.copyfile("src/_pandoc.md", TARGET_FOLDER + "/00_title_toc.md")
 
 source_folders = glob("src/*/")
-print(source_folders)
 
 for folder in source_folders:
     if "/_static/" in folder:
