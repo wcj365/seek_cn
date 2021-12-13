@@ -1,7 +1,21 @@
-# 求索电子出版系统
+---
+title: 求索电子出版系统
+author: 王超杰
+CJKmainfont: "AR PL UKai TW" 
+mainfont: "AR PL UKai TW" 
+geometry: margin=2cm
+number-sections: true 
+toc: false
+documentclass: extarticle
+fontsize: 14pt
+rights: © 2021 Chaojie Wang
+lang: en-US
+#lang: zh-CN
+---
 
-求索（SEEK）由王超杰博士独立开发，其英文全称是`Simply Elegant Electronic Knowledge System`，
-简写为SEEK。求索即可以用来为个人出版电子书籍，也可以用来为组织管理电子档案。
+
+求索（SEEK）由王超杰博士独立开发，其英文全称是`Simply Elegant Electronic Knowledge System`，简写为SEEK。
+求索即可以用来为个人出版电子书籍，也可以用来为组织管理电子档案。
 它的主要特点是操作简易，原始文档和生成版本都适合永久保存并，以多种方式灵活分享。
 
 本系统是对Jupyter Book（网站生成系统）及Pandoc（文档转换系统）的无缝整合。
@@ -70,12 +84,12 @@ pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子�
 
 标签      | 作用            | 例子
 ---------|-----------------|-----------------------------------------------
-`#`       | 第一级标题（章）  | `# 程颢`
-`##`      | 第二级标题 （节） | `## 春日偶成`                     
-`**`      | 粗体             | `**不忘初心**`  
-`*`       | 斜体             | `*厚德载物*`
-`[]`      | 网页链接         | `[千家诗](https://wcj365.github.io/1000)`
-`![]`     | 图像             | `![求索系统功能图](seek_functions.png)`
+#       | 第一级标题（章）  | `# 程颢`
+##      | 第二级标题 （节） | `## 春日偶成`                     
+**      | 粗体             | `**不忘初心**`  
+*       | 斜体             | `*厚德载物*`
+[]      | 网页链接         | `[千家诗](https://wcj365.github.io/1000)`
+![]     | 图像             | `![求索系统功能图](seek_functions.png)`
 
 
 ## （五）使用过程
