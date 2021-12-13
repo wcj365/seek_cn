@@ -35,8 +35,7 @@ for folder in source_folders:
                 lines = f_read.readlines()
                 for line in lines:
                     if line.startswith("!["):
-                        f_append.write(line.split("]")[0] + "](../" + folder + "/" + line.split("]")[1])
-                        print(line.split("]")[0] + "](../" + folder + "/" + line[4:])
+                        f_append.write(line.split("]")[0] + "](../" + folder + line.split("]")[1].lstrip("("))
                     else:
                         f_append.write(line)
                 f_append.write("\n\n")
