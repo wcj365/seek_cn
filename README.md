@@ -1,8 +1,8 @@
  # 求索电子出版系统
 
-求索（SEEK）是一个电子文档出版系统，适用于个人和企业出版电子书籍和管理电子档案。
-它的主要特点是操作简易，原始文档和生成版本可以永久保存并以多种方式灵活分享。
-求索由王超杰博士独立开发。其英文全称是`Simply Elegant Electronic Knowledge System`，简写为SEEK。
+求索（SEEK）由王超杰博士独立开发，其英文全称是`Simply Elegant Electronic Knowledge System`，简写为SEEK。
+求索即可以用来为个人出版电子书籍，也可以用来为组织管理电子档案。
+它的主要特点是操作简易，原始文档和生成版本都适合永久保存并，以多种方式灵活分享。
 
 本系统是对Jupyter Book（网站生成系统）及Pandoc（文档转换系统）的无缝整合。
 它利用Jupyter Book生成网站供在线阅读，并利用Pandoc生成pdf和epub版本供线下阅读。
