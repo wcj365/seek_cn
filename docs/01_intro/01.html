@@ -278,9 +278,9 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>求索电子出版系统<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>求索（SEEK）是一个电子文档出版系统，适用于个人和企业出版电子书籍和管理电子档案。
-它的主要特点是操作简易，原始文档和生成版本可以永久保存并以多种方式灵活分享。
-求索由王超杰博士独立开发。其英文全称是<code class="docutils literal notranslate"><span class="pre">Simply</span> <span class="pre">Elegant</span> <span class="pre">Electronic</span> <span class="pre">Knowledge</span> <span class="pre">System</span></code>，简写为SEEK。</p>
+<p>求索（SEEK）由王超杰博士独立开发，其英文全称是<code class="docutils literal notranslate"><span class="pre">Simply</span> <span class="pre">Elegant</span> <span class="pre">Electronic</span> <span class="pre">Knowledge</span> <span class="pre">System</span></code>，简写为SEEK。
+求索即可以用来为个人出版电子书籍，也可以用来为组织管理电子档案。
+它的主要特点是操作简易，原始文档和生成版本都适合永久保存并，以多种方式灵活分享。</p>
 <p>本系统是对Jupyter Book（网站生成系统）及Pandoc（文档转换系统）的无缝整合。
 它利用Jupyter Book生成网站供在线阅读，并利用Pandoc生成pdf和epub版本供线下阅读。
 pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子书阅读器阅读。</p>
@@ -295,7 +295,7 @@ pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子�
 </ul>
 <div class="section" id="id2">
 <h2>（一）系统功能<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p><img alt="求索电子出版系统功能图" src="../_images/seek.png" /></p>
+<p><img alt="求索电子出版系统功能图" src="../_images/seek_functions.png" /></p>
 </div>
 <div class="section" id="id3">
 <h2>（二）书的结构<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
@@ -321,12 +321,12 @@ pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子�
 <td><p>src/01_qi_jue (七绝) ，src/02_qi_lv (七律）</p></td>
 </tr>
 <tr class="row-even"><td><p>章(chapter)</p></td>
-<td><p>文本（Markdown格式）</p></td>
-<td><p><a class="reference external" href="http://01.md">01.md</a> （程颢），以#开头</p></td>
+<td><p>文件（Markdown格式）</p></td>
+<td><p><a class="reference external" href="http://01.md">01.md</a> （程颢），第一行为章标题，以#开头</p></td>
 </tr>
 <tr class="row-odd"><td><p>节(section)</p></td>
-<td><p>文本中的部分</p></td>
-<td><p>春日偶成，以##开头</p></td>
+<td><p>文件中的部分</p></td>
+<td><p>春日偶成，第一行为节标题以##开头</p></td>
 </tr>
 </tbody>
 </table>
@@ -367,32 +367,28 @@ pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子�
 </thead>
 <tbody>
 <tr class="row-even"><td><p>#</p></td>
-<td><p>第一及标题</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">七绝</span></code></p></td>
+<td><p>第一级标题（章）</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">程颢</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>##</p></td>
-<td><p>第二级标题</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">程颢</span></code></p></td>
+<td><p>第二级标题 （节）</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">春日偶成</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>###</p></td>
-<td><p>第三级标题</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">春日偶成</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>**</p></td>
-<td><p>强调</p></td>
+<tr class="row-even"><td><p>**</p></td>
+<td><p>粗体</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">**不忘初心**</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>*</p></td>
+<tr class="row-odd"><td><p>*</p></td>
 <td><p>斜体</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">*厚德载物*</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>[]</p></td>
+<tr class="row-even"><td><p>[]</p></td>
 <td><p>网页链接</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">[千家诗电子版](：https://wcj365.github.io/1000)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[千家诗电子版](https://wcj365.github.io/1000)</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>![]</p></td>
+<tr class="row-odd"><td><p>![]</p></td>
 <td><p>图像</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">![求索系统功能图](seek.png)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">![求索系统功能图](seek_functions.png)</span></code></p></td>
 </tr>
 </tbody>
 </table>
