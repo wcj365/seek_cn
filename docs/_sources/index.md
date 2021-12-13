@@ -8,5 +8,5 @@ PEEPS由王超杰博士开发。
 
 **线下阅读版本**
 
-- [pdf](offline/wcj365_seek.pdf)
-- [epub](offline/wcj365_seek.epub)
+- [pdf](https://wcj365.github.io/seek/offline/wcj365_seek.pdf)
+- [epub](https://wcj365.github.io/seek/offline/wcj365_seek.epub)
