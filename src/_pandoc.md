@@ -26,6 +26,3 @@ https://wcj365.github.io/seek
 
 \end{center}
 
-\pagebreak
-\tableofcontents
-\pagebreak
