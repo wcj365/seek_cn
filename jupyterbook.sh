@@ -31,7 +31,7 @@ jupyter-book build --path-output . src > jupyterbook.log
 mkdir docs
 mkdir docs/offline            # to store pdf and epub version of the book
 cp -r _build/html/* ./docs/   # This is the contents of the generated website
-cp .nojekyll ./docs/          # required for GitHub pages to render without using jekyll
+touch ./docs/.nojekyll        # ask GitHub Pages not to render the static website using Jekyll
 
 
 # Step 5 - Push the changes to GitHub
