@@ -21,7 +21,7 @@ for i in range(1, 82):
 
     with open(f"{folder}/{chapter}.md", "w") as f:
         f.write("# " + chapter)
-        f.write("\n\n**【经文】**\n")
+        f.write("\n\n")
         f.write(html.find("p",{"class":"jingwen"}).getText())      # 经文 
         f.write("\n**【注释】**\n") 
         f.write(html.find("p",{"class":"comment"}).getText())      # 注释
