@@ -1,15 +1,50 @@
+#!/usr/bin/env python3
+
 import os
 import shutil
 from glob import glob
 
-TARGET_FOLDER = "_pandoc"
+TARGET_FOLDER = "_pandoc"     # The folder to store generated files 
 
 if os.path.exists(TARGET_FOLDER):
     shutil.rmtree(TARGET_FOLDER)
 
 os.mkdir(TARGET_FOLDER)
 
-shutil.copyfile("src/_pandoc.md", TARGET_FOLDER + "/00_title_toc.md")
+# 第一步 - 处理存根子目录下的内容（序，自序等)
+# 序，自序等的文件名要以001，002等开头。
+# 000保留给书的首页和目录
+
+shutil.copyfile("src/_pandoc.md", TARGET_FOLDER + "/000_title_toc.md")     
+
+files = glob("src/*.md")
+
+for file in files:
+    if file.split("/")[-1].startswith("_"):    # 非内容的系统文件，比如 _toc.yml, _config.yml，_pandoc.md
+        continue  
+    elif file.split("/")[-1] == "index.md":    # 网站首页，不必加入电子版里
+        continue
+    else:
+        target = TARGET_FOLDER + "/" + file.split("/")[-1]
+        shutil.copyfile(file, target)
+        with open(file, "r") as f:
+            lines = f.readlines()
+
+        with open(target, "w") as f:
+            if not lines[0].startswith("# "):
+                f.write("# ")
+
+            for line in lines:
+                if line.startswith("!["):           # 图像
+                    f.write(line.split("]")[0] + "](" + folder + line.split("]")[1].lstrip("("))
+                else:
+                f.write(line)
+
+            f.write("\n\n")
+            f.write("\\newpage")
+            f.write("\n\n")
+
+# 第二步 - 处理存于子目录下的正文（各辑，各章)
 
 source_folders = glob("src/*/")
 
@@ -41,4 +76,3 @@ for folder in source_folders:
                 f_append.write("\n\n")
                 f_append.write("\\newpage")
                 f_append.write("\n\n")
- 
