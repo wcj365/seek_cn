@@ -11,7 +11,7 @@ if os.path.exists(TARGET_FOLDER):
 
 os.mkdir(TARGET_FOLDER)
 
-# 第一步 - 处理存根子目录下的内容（序，自序等)
+# 第一步 - 处理存根文件夹下的内容（序，自序等)
 # 序，自序等的文件名要以001，002等开头。
 # 000保留给书的首页和目录
 
@@ -44,16 +44,16 @@ for file in files:
             f.write("\\newpage")
             f.write("\n\n")
 
-# 第二步 - 处理存于子目录下的正文（各辑，各章)
+# 第二步 - 处理存于子文件夹下的正文（各辑，各章)
 
 source_folders = glob("src/*/")
 
 for folder in source_folders:
-    if "/_static/" in folder:
+    if "/_static/" in folder:           # 非内容的网站静态文件存于此文件夹
         continue
     files = glob(folder + "*.md")
     files.sort()
-    if not folder + "00.md" in files:
+    if not folder + "00.md" in files:   # 存放内容的子文件夹必须有一个 00.md 文件作为该辑的目录
         continue
     chapter_file = TARGET_FOLDER + "/"+ folder.split("/")[1] + ".md"
     if os.path.exists(chapter_file):
@@ -61,7 +61,7 @@ for folder in source_folders:
     with open(chapter_file, "a") as f_append:
         with open(folder + "00.md", "r") as f_read:
             f_append.write(f_read.readline())
-            f_append.write("\n")
+            f_append.write("\n")             # 没有这个新行会出问题
         for file in files:
             if "00.md" in file:
                 continue
