@@ -1,8 +1,8 @@
-# 【求索电子出版系统】
+# 道德经
 
-路漫漫其修远兮，吾将上下而求索。
+
 
 **线下阅读版本**
 
-- [pdf](https://wcj365.github.io/seek/offline/wcj365_seek.pdf)
-- [epub](https://wcj365.github.io/seek/offline/wcj365_seek.epub)
+- [pdf](https://wcj365.github.io/seek/offline/wcj365_dao.pdf)
+- [epub](https://wcj365.github.io/seek/offline/wcj365_dao.epub)

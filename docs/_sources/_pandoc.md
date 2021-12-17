@@ -1,6 +1,6 @@
 ---
-title: 求索电子出版系统
-author: 王超杰
+title: 道德经
+author: 老子
 CJKmainfont: "AR PL UKai TW" 
 mainfont: "AR PL UKai TW" 
 geometry: margin=2cm

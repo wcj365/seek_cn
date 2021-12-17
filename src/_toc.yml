@@ -1,12 +1,90 @@
 format: jb-book
 root: index
 chapters:
-- file: 01_intro/00
+- file: 001_intro
+- file: 01_dao/00
   sections:
-  - file: 01_intro/01
-  - file: 01_intro/02
-- file: 02_github/00
+  - file: 01_dao/01
+  - file: 01_dao/02
+  - file: 01_dao/03
+  - file: 01_dao/04
+  - file: 01_dao/05
+  - file: 01_dao/06
+  - file: 01_dao/07
+  - file: 01_dao/08
+  - file: 01_dao/09
+  - file: 01_dao/10
+  - file: 01_dao/11
+  - file: 01_dao/12
+  - file: 01_dao/13
+  - file: 01_dao/14
+  - file: 01_dao/15
+  - file: 01_dao/16
+  - file: 01_dao/17
+  - file: 01_dao/18
+  - file: 01_dao/19
+  - file: 01_dao/20
+  - file: 01_dao/21
+  - file: 01_dao/22
+  - file: 01_dao/23
+  - file: 01_dao/24
+  - file: 01_dao/25
+  - file: 01_dao/26
+  - file: 01_dao/27
+  - file: 01_dao/28
+  - file: 01_dao/29
+  - file: 01_dao/30
+  - file: 01_dao/31
+  - file: 01_dao/32
+  - file: 01_dao/33
+  - file: 01_dao/34
+  - file: 01_dao/35
+  - file: 01_dao/36
+  - file: 01_dao/37
+- file: 02_de/00
   sections:
-  - file: 02_github/01
-  - file: 02_github/02
+  - file: 02_de/38
+  - file: 02_de/39
+  - file: 02_de/40
+  - file: 02_de/41
+  - file: 02_de/42
+  - file: 02_de/43
+  - file: 02_de/44
+  - file: 02_de/45
+  - file: 02_de/46
+  - file: 02_de/47
+  - file: 02_de/48
+  - file: 02_de/49
+  - file: 02_de/50
+  - file: 02_de/51
+  - file: 02_de/52
+  - file: 02_de/53
+  - file: 02_de/54
+  - file: 02_de/55
+  - file: 02_de/56
+  - file: 02_de/57
+  - file: 02_de/58
+  - file: 02_de/59
+  - file: 02_de/60
+  - file: 02_de/61
+  - file: 02_de/62
+  - file: 02_de/63
+  - file: 02_de/64
+  - file: 02_de/65
+  - file: 02_de/66
+  - file: 02_de/67
+  - file: 02_de/68
+  - file: 02_de/69
+  - file: 02_de/70
+  - file: 02_de/71
+  - file: 02_de/72
+  - file: 02_de/73
+  - file: 02_de/74
+  - file: 02_de/75
+  - file: 02_de/76
+  - file: 02_de/77
+  - file: 02_de/78
+  - file: 02_de/79
+  - file: 02_de/80
+  - file: 02_de/81
 

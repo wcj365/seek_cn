@@ -1,11 +1,9 @@
 #!/usr/bin/bash
 
-import requests
+from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
-url = "http://www.quanxue.cn/CT_DaoJia/LaoZi/LaoZi01.html"
 import os
-import cn2an
 
 
 for i in range(1, 82):
@@ -14,59 +12,32 @@ for i in range(1, 82):
 
     url = f"http://www.quanxue.cn/CT_DaoJia/LaoZi/LaoZi{chapter}.html"
 
-    git 
+    req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    page_bytes = urlopen(req).read()
+    html = BeautifulSoup(page_bytes)
 
-def transform(part):
 
-    # Step 1 - Read the source data
+    folder = "../src/01_dao" if i <=37 else "../src/02_de"
 
-    with open(part + ".mhtml", "r") as f:
-        lines = f.readlines()
+    with open(f"{folder}/{chapter}.md", "w") as f:
+        f.write("# " + chapter)
+        f.write("\n\n## 经文\n")
+        f.write(html.find("p",{"class":"jingwen"}).getText())      # 经文 
+        f.write("\n## 注释\n") 
+        f.write(html.find("p",{"class":"comment"}).getText())      # 注释
+        f.write("\n## 译文\n")
+        f.write(html.find("p",{"class":"yiwen"}).getText())      # 译文
 
-    # Step 2 - Create 00.md 
-    
-    with open(f"../src/{part}/00.md", "w") as f:
-        f.write("# ")
-        f.write(lines[0])
-        f.write("\n")
-        f.write("```{tableofcontents}")
-        f.write("\n")
-        f.write("```")
 
-    # Step 3 - Create mapping for each chapter (chapter number and starting line number)
+        if html.find("div",{"class":"yinyong"}) != None:      
+            f.write("\n## 引语\n")      
+            f.write(html.find("div",{"class":"yinyong"}).getText())    # 引语
 
-    articles = []
-    for index, line in enumerate(lines):
-        if "、" in line:   
-            cn = line.split("、")[0]
-            try:
-                an = cn2an.cn2an(cn) 
-                articles.append((cn, an, index)) 
-            except:
-                continue
+        if html.find("div",{"class":"pingxi"}) != None:
+            f.write("\n## 评析\n")
+            f.write(html.find("div",{"class":"pingxi"}).getText())      # 评析
 
-    # Step 4 - Create article files
+        if html.find("div",{"class":"jiedu"}) != None:
+            f.write("\n## 解读\n")
+            f.write(html.find("div",{"class":"jiedu"}).getText())      # 解读
 
-    for index, article in enumerate(articles):
-        an = article[1]
-        if an < 10:
-            an = "0" + str(an)
-        else:
-            an = str(an)
-
-        with open(f"../src/{part}/{an}.md", "w") as f:
-            f.write("# ")
-            if index + 1 == len(articles):
-                f.writelines(lines[article[2]:])  
-            else:        
-                f.writelines(lines[article[2]:articles[index + 1][2]])
-      
-
-parts = ["02_shang_pian", "03_zhong_pian", "04_xia_pian"]
-
-for part in parts:
-    
-    folder = "../src/" + part
-    if not os.path.isdir(folder):
-        os.mkdir(folder)
-    transform(part)
