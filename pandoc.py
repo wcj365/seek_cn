@@ -38,7 +38,7 @@ for file in files:
                 if line.startswith("!["):           # 图像
                     f.write(line.split("]")[0] + "](" + folder + line.split("]")[1].lstrip("("))
                 else:
-                f.write(line)
+                    f.write(line)
 
             f.write("\n\n")
             f.write("\\newpage")
