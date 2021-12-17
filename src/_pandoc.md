@@ -4,7 +4,7 @@ author: 老子
 CJKmainfont: "AR PL UKai TW" 
 mainfont: "AR PL UKai TW" 
 geometry: margin=2cm
-number-sections: true 
+number-sections: 2 
 toc: 目录
 documentclass: extarticle
 fontsize: 17pt
