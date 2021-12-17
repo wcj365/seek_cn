@@ -5,7 +5,7 @@ CJKmainfont: "AR PL UKai TW"
 mainfont: "AR PL UKai TW" 
 geometry: margin=2cm
 number-sections: true 
-toc: true
+toc: 目录
 documentclass: extarticle
 fontsize: 17pt
 rights: © 2021 Chaojie Wang
