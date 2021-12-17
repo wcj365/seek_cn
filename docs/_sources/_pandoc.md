@@ -4,10 +4,10 @@ author: 老子
 CJKmainfont: "AR PL UKai TW" 
 mainfont: "AR PL UKai TW" 
 geometry: margin=2cm
-number-sections: true 
+number-sections: 2 
 toc: false
 documentclass: extarticle
-fontsize: 14pt
+fontsize: 17pt
 rights: © 2021 Chaojie Wang
 lang: en-US
 #lang: zh-CN
