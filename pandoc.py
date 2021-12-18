@@ -36,7 +36,7 @@ for file in files:
 
             for line in lines:
                 if line.startswith("!["):           # 图像
-                    f.write(line.split("]")[0] + "](" + folder + line.split("]")[1].lstrip("("))
+                    f.write(line.split("]")[0] + "](" + "src/" + line.split("]")[1].lstrip("("))
                 else:
                     f.write(line)
 
