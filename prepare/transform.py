@@ -16,9 +16,9 @@ for i in range(1, 82):
         f.write("# 第 " + chapter + " 章")
         f.write("\n")
         f.write(html.find("p",{"class":"jingwen"}).getText())      # 经文 
-        f.write("\n**【注释】**\n") 
-        f.write("\n\n".join(html.find("p",{"class":"comment"}).getText().split("\n")))      # 注释 
-        f.write("\n**【译文】**\n")
+        f.write("\n**【注释】**\n\n") 
+        f.write("- " + "\n- ".join(html.find("p",{"class":"comment"}).getText().strip().strip("\n").split("\n")))      # 注释 
+        f.write("\n\n**【译文】**\n")
         f.write(html.find("p",{"class":"yiwen"}).getText())      # 译文
 
 
@@ -27,7 +27,7 @@ for i in range(1, 82):
             f.write(html.find("div",{"class":"yinyong"}).getText())    # 引语
 
         if html.find("div",{"class":"pingxi"}) != None:
-            f.write("\**【评析】**\n")
+            f.write("\n**【评析】**\n")
             f.write(html.find("div",{"class":"pingxi"}).getText())      # 评析
 
         if html.find("div",{"class":"jiedu"}) != None:
