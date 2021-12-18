@@ -16,6 +16,7 @@ pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子�
 应用例子可以参照：
 
 - [千家诗](https://wcj365.github.io/1000)
+- [道德经](https://www.wcj365.xyz/dao)
 - [乡愁永酒诗文集](https://www.wcj365.xyz)
 
 
