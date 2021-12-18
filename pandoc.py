@@ -11,7 +11,7 @@ if os.path.exists(TARGET_FOLDER):
 
 os.mkdir(TARGET_FOLDER)
 
-# 第一步 - 处理存根文件夹下的内容（序，自序等)
+# 第一步 - 处理存在根文件夹下的内容（序，自序等)
 # 序，自序等的文件名要以001，002等开头。
 # 000保留给书的首页和目录
 
@@ -59,14 +59,10 @@ for folder in source_folders:
     if os.path.exists(chapter_file):
         os.remove(chapter_file)
     with open(chapter_file, "a") as f_append:
-        with open(folder + "00.md", "r") as f_read:
-            f_append.write(f_read.readline())
-            f_append.write("\n")             # 没有这个新行会出问题
         for file in files:
-            if "00.md" in file:
-                continue
             with open(file, "r") as f_read:
-                f_append.write("#")
+                if not "00.md" in file:
+                    f_append.write("#")
                 lines = f_read.readlines()
                 for line in lines:
                     if line.startswith("!["):
