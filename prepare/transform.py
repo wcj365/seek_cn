@@ -17,7 +17,7 @@ for i in range(1, 82):
         f.write("\n")
         f.write(html.find("p",{"class":"jingwen"}).getText())      # 经文 
         f.write("\n**【注释】**\n\n") 
-        f.write("- " + "\n- ".join(html.find("p",{"class":"comment"}).getText().strip().strip("\n").split("\n")))      # 注释 
+        f.write("    \n".join(html.find("p",{"class":"comment"}).getText().strip().strip("\n").split("\n")))      # 注释 
         f.write("\n\n**【译文】**\n")
         f.write(html.find("p",{"class":"yiwen"}).getText())      # 译文
 
