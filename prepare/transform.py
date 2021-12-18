@@ -1,27 +1,20 @@
 #!/usr/bin/bash
 
-from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
-
-import os
-
 
 for i in range(1, 82):
 
-    chapter = "0" + str(i) if i < 10 else str(i)
+    chapter = "0" + str(i) if i < 10 else str(i) 
+    
+    file = f"../data/chapter_{chapter}.html"
 
-    url = f"http://www.quanxue.cn/CT_DaoJia/LaoZi/LaoZi{chapter}.html"
-
-    req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    page_bytes = urlopen(req).read()
-    html = BeautifulSoup(page_bytes)
-
+    html = BeautifulSoup(open(file, encoding="utf8"), "html.parser")
 
     folder = "../src/01_dao" if i <=37 else "../src/02_de"
 
     with open(f"{folder}/{chapter}.md", "w") as f:
-        f.write("# " + chapter)
-        f.write("\n\n")
+        f.write("# 第 " + chapter + " 章")
+        f.write("\n")
         f.write(html.find("p",{"class":"jingwen"}).getText())      # 经文 
         f.write("\n**【注释】**\n") 
         f.write(html.find("p",{"class":"comment"}).getText())      # 注释
