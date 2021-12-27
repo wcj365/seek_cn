@@ -26,7 +26,7 @@ pdf版本适用于打印阅读。epub版本适用于在平板电脑上用电子�
 图一描述求索的系统功能:
 
 
-![求索电子出版系统功能图](seek_functions.png)
+![求索电子出版系统功能图](seek_doc/seek_functions.png)
 
 
 ## （二）书的结构
