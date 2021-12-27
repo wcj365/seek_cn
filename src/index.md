@@ -8,6 +8,6 @@
 
 **下载线下阅读版本**
 
-- [pdf](https://wcj365.github.io/seek/offline/dao_de_jing.pdf)
-- [epub](https://wcj365.github.io/seek/offline/dao_de_jing.epub)
-- [docx](https://wcj365.github.io/seek/offline/dao_de_jing.docx)
+- [pdf](https://www.wcj365.xyz/dao/offline/dao_de_jing.pdf)
+- [epub](https://www.wcj365.xyz/dao/offline/dao_de_jing.epub)
+- [docx](https://www.wcj365.xyz/dao/offline/dao_de_jing.docx)

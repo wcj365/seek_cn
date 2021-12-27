@@ -1,5 +1,5 @@
 title: 道德经
-author: 老子 
+author: Dr. Chaojie Wang 
 email: wcj365@gmail.com
 logo: yinyang.png
 copyright: "2022" 
@@ -21,7 +21,7 @@ html:
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : false  # Whether to add a link to your repository button
   use_issues_button         : false  # Whether to add an "open an issue" button
-  extra_navbar              : "作者：老子"   # Will be displayed underneath the left navbar.
+  extra_navbar              : "<a href="https://baike.baidu.com/item/%E8%80%81%E5%AD%90/5448">作者：老子</a>"   # Will be displayed underneath the left navbar.
   extra_footer              : ""  # Will be displayed underneath the footer.
   google_analytics_id       : ""  # A GA id that can be used to track book views.
   home_page_in_navbar       : false  # Whether to include your home page in the left Navigation Bar
