@@ -10,3 +10,4 @@
 
 - [pdf](https://wcj365.github.io/seek/offline/dao_de_jing.pdf)
 - [epub](https://wcj365.github.io/seek/offline/dao_de_jing.epub)
+- [docx](https://wcj365.github.io/seek/offline/dao_de_jing.docx)
