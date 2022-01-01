@@ -114,7 +114,9 @@ p {
 
 修改根目录下的`_pandoc.md`文件。
 
-## （七）参考资料
+## （七）电子出版参考资料
+
+https://www.writerontheside.com/gumroad-vs-amazon-kdp/
 
 https://learnbyexample.github.io/my-book-writing-experience/
 
