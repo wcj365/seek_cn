@@ -116,6 +116,8 @@ p {
 
 ## （七）参考资料
 
+https://leanpub.com/selfpub
+
 https://scastiel.dev/posts/2021-01-21-how-i-use-pandoc-to-create-my-programming-ebooks/
 
 https://github.com/keevol/pandoc_md_book_starter
