@@ -116,6 +116,10 @@ p {
 
 ## （七）参考资料
 
+https://learnbyexample.github.io/my-book-writing-experience/
+
+https://github.com/rust-lang/mdBook
+
 https://leanpub.com/selfpub
 
 https://scastiel.dev/posts/2021-01-21-how-i-use-pandoc-to-create-my-programming-ebooks/
