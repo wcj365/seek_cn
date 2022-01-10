@@ -114,6 +114,10 @@ p {
 
 修改根目录下的`_pandoc.md`文件。
 
+### 4. 如何把把文本排除在外？
+
+在文本文件名改成非Markdown。比如把 `05.md` 改为 `05.md.xyz`。去掉 `.xyz` 就可从新加入。
+
 ## （七）电子出版参考资料
 
 https://www.writerontheside.com/gumroad-vs-amazon-kdp/
